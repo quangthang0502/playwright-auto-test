@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
 
-const BASE_URL = "https://frontend.staging-bitcastle.work/en";
+const BASE_URL = "https:localhost:3000";
 const LOGIN_PAGE_URL_PATTERN = /.*\/login.*/;
-const LOGIN_USERNAME = "trinhthihuyen+@cryptopie-labo.com";
-const LOGIN_PASSWORD = "Abcde12345-";
+const LOGIN_USERNAME = "user";
+const LOGIN_PASSWORD = "password";
 
 test("has title", async ({ page }) => {
   await page.goto(`${BASE_URL}/futures/BTC_USDT`);
